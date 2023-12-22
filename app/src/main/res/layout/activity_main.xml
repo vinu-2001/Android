@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:background="#e5e5e5">
+    <TextView
+        android:id="@+id/textUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="45dp"
+        android:text="Username"
+        android:layout_gravity="left"/>
+
+    <EditText
+        android:inputType="text"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/username"
+        android:layout_below="@+id/textUsername"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_background"
+        android:hint="  Username"></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/birthdatelText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/username"
+        android:text="Birthdate"
+        android:layout_gravity="left"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+    </LinearLayout>
+
+    <EditText
+        android:inputType="date"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/birthdate"
+        android:layout_below="@+id/birthdatelTextText"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_background"
+        android:hint="  Birthdate"></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/birthdate"
+        android:text="Email"
+        android:layout_gravity="left"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/email"
+        android:layout_below="@+id/emailText"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_background"
+        android:hint="  Email"></EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age"
+        android:id="@+id/submit"
+        android:layout_marginTop="25dp"
+        android:text="Log in"
+        android:backgroundTint="#457b9d"/>
+
+
+</LinearLayout>
